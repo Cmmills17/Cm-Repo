@@ -1,0 +1,28 @@
+:root {
+    --cf-dark: #212121;
+    --cf-light: #ebebeb;
+    --cf-darkblue: #00223d;
+    --cf-highlight: #fae100;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/img/LandingPage_1920.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
