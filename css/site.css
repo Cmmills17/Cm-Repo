@@ -3,10 +3,60 @@
     --cf-light: #ebebeb;
     --cf-darkblue: #00223d;
     --cf-highlight: #fae100;
+    --cf-body-font: "Roboto", sans-serif;
+    --cf-title-font: "Racing Sans One", sans-serif;
+    --cf-subtitle-font: "Fira Sans", sans-serif;
+}
+
+.nav-logo>img {
+    height: 3rem;
+    width: 3rem;
+}
+
+title>img {
+    height: 5rem;
 }
 
 
-html,
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50rem;
+}
+
+.hero-title {
+    font-family: var(--cf-title-font);
+    color: var(--cf-light);
+    font-size: 2.3rem;
+    line-height: 2rem;
+
+}
+
+.hero-subtitle {
+    font-family: var(--cf-subtitle-font);
+    color: var(--cf-light);
+    font-weight: 200;
+    font-size: 1rem;
+
+}
+
+.hero-button {
+    background-color: var(--cf-highlight);
+    color: var(--cf-dark);
+    border-radius: .25rem;
+    border: #fae100;
+    padding: .5rem;
+    margin-top: .5rem;
+}
+
+
+.navbar {
+    color: var(--cf-light);
+}
+
+
+
 body {
     height: 100%;
 }
@@ -14,9 +64,13 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_1920.png");
+    background-image: url("/img/LandingPage_576.png");
     background-position: top right;
     background-repeat: no-repeat;
+    background-color: var(--cf-darkblue);
+    height: 100%;
+
+
 }
 
 .content {
@@ -25,4 +79,159 @@ body {
 
 .footer {
     flex-shrink: 0;
+    color: var(--cf-light);
+}
+
+@media (min-width: 576px) {
+    body {
+        background-image: url("/img/LandingPage_768.png");
+        height: 432px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 5rem;
+    }
+
+    .hero-title {
+        font-family: var(--cf-title-font);
+        color: var(--cf-light);
+        font-size: 2.5rem;
+        line-height: 2.rem;
+
+    }
+
+    .hero-subtitle {
+        font-family: var(--cf-subtitle-font);
+        color: var(--cf-light);
+        font-weight: 200;
+        font-size: 1.07rem;
+
+    }
+
+
+
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url("/img/LandingPage_992.png");
+        height: 558px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 10rem;
+    }
+
+    .hero-title {
+        font-family: var(--cf-title-font);
+        color: var(--cf-light);
+        font-size: 2.7rem;
+        line-height: 2.1rem;
+
+    }
+
+    .hero-subtitle {
+        font-family: var(--cf-subtitle-font);
+        color: var(--cf-light);
+        font-weight: 200;
+        font-size: 1.16rem;
+
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        background-image: url("/img/LandingPage_1200.png");
+        height: 675px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 12rem;
+    }
+
+    .hero-title {
+        font-family: var(--cf-title-font);
+        color: var(--cf-light);
+        font-size: 4rem;
+        line-height: 3rem;
+
+    }
+
+    .hero-subtitle {
+        font-family: var(--cf-subtitle-font);
+        color: var(--cf-light);
+        font-weight: 200;
+        font-size: 1.7rem;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-image: url("/img/LandingPage_1400.png");
+        height: 788px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 12rem;
+    }
+
+    .hero-title {
+        font-family: var(--cf-title-font);
+        color: var(--cf-light);
+        font-size: 4.2rem;
+        line-height: 3.2rem;
+
+    }
+
+    .hero-subtitle {
+        font-family: var(--cf-subtitle-font);
+        color: var(--cf-light);
+        font-weight: 200;
+        font-size: 1.8rem;
+
+    }
+
+}
+
+@media (min-width: 1400px) {
+    body {
+        background-image: url("/img/LandingPage_1920.png");
+        height: 1080px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 12rem;
+    }
+
+    .hero-title {
+        font-family: var(--cf-title-font);
+        color: var(--cf-light);
+        font-size: 4.4rem;
+        line-height: 3.4rem;
+
+    }
+
+    .hero-subtitle {
+        font-family: var(--cf-subtitle-font);
+        color: var(--cf-light);
+        font-weight: 200;
+        font-size: 1.87rem;
+
+    }
 }
