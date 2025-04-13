@@ -13,23 +13,20 @@
     width: 3rem;
 }
 
-title>img {
-    height: 5rem;
-}
 
 
 .hero-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 50rem;
+    margin-top: 33rem;
 }
 
 .hero-title {
     font-family: var(--cf-title-font);
     color: var(--cf-light);
-    font-size: 2.3rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.2rem;
 
 }
 
@@ -37,7 +34,7 @@ title>img {
     font-family: var(--cf-subtitle-font);
     color: var(--cf-light);
     font-weight: 200;
-    font-size: 1rem;
+    font-size: .65rem;
 
 }
 
@@ -57,18 +54,21 @@ title>img {
 
 
 
-body {
-    height: 100%;
-}
+
 
 body {
     display: flex;
     flex-direction: column;
     background-image: url("/img/LandingPage_576.png");
-    background-position: top right;
+    background-size: cover;
+    background-position: top center;
     background-repeat: no-repeat;
     background-color: var(--cf-darkblue);
-    height: 100%;
+    height: 1247px;
+    overflow: hidden;
+
+
+
 
 
 }
@@ -80,26 +80,33 @@ body {
 .footer {
     flex-shrink: 0;
     color: var(--cf-light);
+    margin-bottom: 50rem;
 }
 
 @media (min-width: 576px) {
     body {
         background-image: url("/img/LandingPage_768.png");
         height: 432px;
+        background-position: top-left;
+        overflow: hidden;
+
+
+
+
     }
 
     .hero-section {
         display: flex;
         flex-direction: row;
         justify-content: start;
-        margin-top: 5rem;
+        margin-top: 10rem;
     }
 
     .hero-title {
         font-family: var(--cf-title-font);
         color: var(--cf-light);
         font-size: 2.5rem;
-        line-height: 2.rem;
+        line-height: 2.1rem;
 
     }
 
@@ -111,7 +118,9 @@ body {
 
     }
 
-
+    footer {
+        margin-top: 21rem;
+    }
 
 }
 
@@ -119,6 +128,7 @@ body {
     body {
         background-image: url("/img/LandingPage_992.png");
         height: 558px;
+
     }
 
     .hero-section {
@@ -143,6 +153,11 @@ body {
         font-size: 1.16rem;
 
     }
+
+    footer {
+        margin-top: 21rem;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -173,6 +188,10 @@ body {
         font-size: 1.7rem;
 
     }
+
+    footer {
+        margin-top: 16.3rem;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -202,6 +221,11 @@ body {
         font-weight: 200;
         font-size: 1.8rem;
 
+
+    }
+
+    footer {
+        margin-top: 14.5rem;
     }
 
 }
@@ -233,5 +257,9 @@ body {
         font-weight: 200;
         font-size: 1.87rem;
 
+    }
+
+    footer {
+        margin-top: 15rem;
     }
 }
