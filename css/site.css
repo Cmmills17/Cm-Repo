@@ -87,7 +87,7 @@ body {
     body {
         background-image: url("/img/LandingPage_768.png");
         height: 432px;
-        background-position: top-left;
+        background-position: end;
         overflow: hidden;
 
 
